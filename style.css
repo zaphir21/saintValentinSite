@@ -1,0 +1,17 @@
+button{
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin:20px;
+	
+}
+
+div{
+	display:flex;
+	justify-content: center;
+}
+body{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-align: center;
+}

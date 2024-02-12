@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title class="titre">"ennuie.html"</title>
+	  <meta charset="utf-8"/>
+	  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+     <h1>Tu veux être ma Valentine ?</h1>
+	 <div class="container">
+	 <button id="yes" style="background-color: green;">Yes</button> 
+	 <button id="no" style="background-color: red;">No</button>
+	 </div>
+	 <script>
+		let score = 0;
+		let buttonYes = document.querySelector('button#yes');
+		let widthYes = 100;
+		let heightYes = 50;
+		let widthNo = 100;
+		let heightNo = 50;
+		let fontSizeYes = 20;
+		let fontSizeNo = 20;
+		let buttonNo = document.querySelector('button#no');
+		buttonYes.addEventListener('click', () => {
+				window.location.href = 'love.html';
+		});
+		buttonNo.addEventListener('click', () => {
+				widthYes = widthYes * 1.1;
+				heightYes = heightYes * 1.1;
+				widthNo = widthNo / 1.1;
+				heightNo = heightNo / 1.1;
+				fontSizeYes = fontSizeYes * 1.1;
+				fontSizeNo = fontSizeNo / 1.1;
+				score++;
+				buttonYes.style.width = widthYes + 'px';
+		buttonYes.style.height = heightYes + 'px';
+		buttonNo.style.width = widthNo + 'px';
+		buttonNo.style.height = heightNo + 'px';
+		buttonYes.style.fontSize = fontSizeYes + 'px';
+		buttonNo.style.fontSize = fontSizeNo + 'px';
+				if (score === 40) {
+					window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';
+				}
+		});
+		buttonYes.style.width = widthYes + 'px';
+		buttonYes.style.height = heightYes + 'px';
+		buttonNo.style.width = widthNo + 'px';
+		buttonNo.style.height = heightNo + 'px';
+		buttonYes.style.fontSize = fontSizeYes + 'px';
+		buttonNo.style.fontSize = fontSizeNo + 'px';
+
+	 </script>
+</body>
+</html>
+	  
